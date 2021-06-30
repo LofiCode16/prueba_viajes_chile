@@ -21,7 +21,8 @@ main {
 }
 
 .about div.row,
-.card-deck {
+.card-deck,
+.form {
   border-top: 2px solid darkturquoise;
 }
 
