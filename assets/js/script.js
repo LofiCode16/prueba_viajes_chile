@@ -21,6 +21,11 @@ let section = window.location.href.split('#')[1];
 let navLinks = document.querySelector('.navbar-nav')
 let links = document.querySelectorAll('.nav-link')
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+
 navLinks.addEventListener('click', function(event){
   links.forEach(function(link){
     link.classList.remove('active');

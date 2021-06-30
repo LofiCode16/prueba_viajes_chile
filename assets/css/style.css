@@ -55,6 +55,20 @@ footer {
   color: white;
 }
 
+.tooltip-inner {
+  background-color: darkturquoise;
+  color: #fff;
+  font-size: 20px;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: rgb(10, 10, 10);
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: darkturquoise;
+}
+
 @media screen and (max-width: 600px) {
 
   footer {
