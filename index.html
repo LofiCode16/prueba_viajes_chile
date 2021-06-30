@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +11,27 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
     crossorigin="anonymous"
     >
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script
+      defer 
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+      crossorigin="anonymous"
+    ></script>
+    <script 
+      defer  
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
+      crossorigin="anonymous"
+    ></script>
     <script 
       defer 
       src="https://kit.fontawesome.com/f4418ac5ca.js" 
       crossorigin="anonymous"
     ></script>
+    <script defer src="./assets/js/script.js"></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
     
     <title>Viajes Chile</title>
   </head>
@@ -33,15 +47,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-link active" href="#">Inicio</a>
-          <a class="nav-link" href="#">Quienes Somos</a>
-          <a class="nav-link" href="#">Destacados</a>
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link active" href="#home">Inicio</a>
+          <a class="nav-link d-none d-md-inline" href="#about">Quienes Somos</a>
+          <a class="nav-link" href="#featured">Destacados</a>
+          <a class="nav-link" href="#contact">Contacto</a>
         </div>
       </div>
     </nav>
 
-    <header class="hero">
+    <header id="home" class="hero">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -67,7 +81,7 @@
 
     <main class="text-white px-5">
 
-      <section class="about py-5 d-none d-md-block">
+      <section id="about" class="about py-5 d-none d-md-block">
         <h3 class="text-center mb-4">¿Quiénes somos?</h3>
       
         <div class="row py-4">
@@ -110,11 +124,11 @@
         </div>
       </section>
 
-      <section class="featured mt-5">
+      <section id="featured" class="featured mt-5 pt-3">
         <h3 class="text-center pb-4">Destacados</h3>
 
         <div class="card-deck">
-          <div class="card m-4">
+          <div class="card mx-md-4 my-4">
             <img src="./assets/img/card1.jpg" class="card-img-top" alt="wilderness">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, aspernatur.</h5>
@@ -122,7 +136,7 @@
             </div>
           </div>
 
-          <div class="card m-4">
+          <div class="card mx-md-4 my-4">
             <img src="./assets/img/card2.jpg" class="card-img-top" alt="wilderness">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, aspernatur.</h5>
@@ -130,7 +144,7 @@
             </div>
           </div>
 
-          <div class="card m-4">
+          <div class="card mx-md-4 my-4">
             <img src="./assets/img/card3.jpg" class="card-img-top" alt="wilderness">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, aspernatur.</h5>
@@ -138,7 +152,7 @@
             </div>
           </div>
 
-          <div class="card m-4">
+          <div class="card mx-md-4 my-4">
             <img src="./assets/img/card4.jpg" class="card-img-top" alt="wilderness">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, aspernatur.</h5>
@@ -149,13 +163,12 @@
         </div>
       </section>
 
-      <section class="contact mt-5 pt-5">
+      <section id="contact" class="contact mt-5 pt-5">
         <h3 class="text-center mb-4">Contacto</h3>
 
-        <div class="form p-5">
+        <div class="form px-md-5 py-5">
           <div class="typeform-widget" data-url="https://form.typeform.com/to/iDaLCgCG?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> 
           <script> 
-            (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() 
           </script>
         </div>
       </section>
@@ -168,30 +181,19 @@
 
       <div>
         <a class="text-white" href="https://github.com/">
-          <i class="m-3 fab fa-github-square fa-2x"></i>
+          <i class="m-md-3 fab fa-github-square fa-2x"></i>
         </a>
         <a class="text-white" href="https://www.linkedin.com/">
-          <i class="m-3 fab fa-linkedin fa-2x"></i>
+          <i class="m-md-3 fab fa-linkedin fa-2x"></i>
         </a>
         <a class="text-white" href="https://twitter.com/?lang=es">
-          <i class="m-3 fab fa-twitter-square fa-2x"></i>
+          <i class="m-md-3 fab fa-twitter-square fa-2x"></i>
         </a>
         <a class="text-white" href="https://www.facebook.com/">
-          <i class="m-3 fab fa-facebook fa-2x"></i>
+          <i class="m-md-3 fab fa-facebook fa-2x"></i>
         </a>
       </div>
     </footer>
 
-    <script 
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-      crossorigin="anonymous"
-    ></script>
-    <script 
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
-      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" 
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/script.js"></script>
   </body>
 </html>
