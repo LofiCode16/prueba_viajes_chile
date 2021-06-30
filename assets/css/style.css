@@ -1,0 +1,13 @@
+body {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
