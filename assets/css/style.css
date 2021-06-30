@@ -46,3 +46,11 @@ main {
 .card img {
   max-height: 200px;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darkturquoise;
+  color: white;
+}
