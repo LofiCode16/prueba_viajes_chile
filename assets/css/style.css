@@ -20,7 +20,8 @@ main {
   background-color: black;
 }
 
-.about div.row {
+.about div.row,
+.card-deck {
   border-top: 2px solid darkturquoise;
 }
 
@@ -35,4 +36,12 @@ main {
 
 .ico i {
   display: block;
+}
+
+.card {
+  background-color: darkturquoise;
+}
+
+.card img {
+  max-height: 200px;
 }
