@@ -24,4 +24,4 @@ Para ver la página, puedes hacer lo siguiente:
 1. Clona este repositorio.
 2. Abre el archivo `index.html` con tu navegador.
 
-O también puedes acceder a ella desde el siguiente [link]('https://diegoperez24.github.io/prueba_viajes_chile/')
+O también puedes acceder a ella desde el siguiente [link](https://diegoperez24.github.io/prueba_viajes_chile/)
