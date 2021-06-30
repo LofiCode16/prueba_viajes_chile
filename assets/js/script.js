@@ -33,3 +33,13 @@ navLinks.addEventListener('click', function(event){
 
   event.target.classList.add("active");
 });
+
+document.addEventListener('scroll', function(){
+  const progressBar = document.querySelector('.progress-bar');
+  const totalScroll = document.documentElement.scrollHeight;
+  const scrollNow = document.documentElement.scrollTop;
+  let progress = ((scrollNow / totalScroll) * 100) + 25.2;
+
+  console.log(progress)
+  progressBar.style.width = `${progress}%`;
+})

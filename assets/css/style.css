@@ -69,6 +69,15 @@ footer {
   border-bottom-color: darkturquoise;
 }
 
+.progress {
+  position: sticky;
+  bottom: 0;
+}
+
+.progress-bar {
+  width: 0;
+}
+
 @media screen and (max-width: 600px) {
 
   footer {
